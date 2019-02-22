@@ -1,0 +1,22 @@
+export PATH=/usr/local/bin:$PATH
+
+# Make pyenv work
+export PATH="/Users/harterrt/.pyenv/shims:${PATH}"
+export CFLAGS="-I/usr/local/opt/openssl/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+
+# # And spark
+export SPARK_HOME=~/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pyspark
+export PATH=$SPARK_HOME/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON=python3
+
+# Keep things tidy, don't create __pycache__
+export PYTHONDONTWRITEBYTECODE=1
+
+
+# Rust stuff
+export PATH="/Users/harterrt/.cargo/bin/:${PATH}"
