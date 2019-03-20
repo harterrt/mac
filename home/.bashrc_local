@@ -6,7 +6,7 @@ export CFLAGS="-I/usr/local/opt/openssl/include -I/Library/Developer/CommandLine
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 # # And spark
-export SPARK_HOME=~/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pyspark
+export SPARK_HOME=~/.pyenv/versions/3.5.2/lib/python3.5/site-packages/pyspark
 export PATH=$SPARK_HOME/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
@@ -20,3 +20,6 @@ export PYTHONDONTWRITEBYTECODE=1
 
 # Rust stuff
 export PATH="/Users/harterrt/.cargo/bin/:${PATH}"
+
+# Copy
+alias copy=pbcopy
