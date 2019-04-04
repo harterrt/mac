@@ -23,3 +23,5 @@ export PATH="/Users/harterrt/.cargo/bin/:${PATH}"
 
 # Copy
 alias copy=pbcopy
+
+alias top="top -o cpu"
