@@ -5,6 +5,10 @@ export PATH="/Users/harterrt/.pyenv/shims:${PATH}"
 export CFLAGS="-I/usr/local/opt/openssl/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
+# Install "framework" versions of python so matplotlib works
+# See: https://github.com/pyenv/pyenv/issues/99#issuecomment-369619326
+export PYTHON_CONFIGURE_OPTS="--enable-framework CC=clang"
+
 # # And spark
 export SPARK_HOME=~/.pyenv/versions/3.5.2/lib/python3.5/site-packages/pyspark
 export PATH=$SPARK_HOME/bin:$PATH
@@ -17,8 +21,8 @@ export PYSPARK_PYTHON=python3
 # Keep things tidy, don't create __pycache__
 export PYTHONDONTWRITEBYTECODE=1
 
-
 # Rust stuff
 export PATH="/Users/harterrt/.cargo/bin/:${PATH}"
 
 alias top="top -o cpu"
+
